@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Bebas Neue";
+  /* background: linear-gradient(135deg, #153677, #4e085f); */
+  background-color: #99ff66;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whole-body {
+  padding: 0% 15%;
+}
+
+.upper-card {
+  background-color: blue;
+}
+
+.task-item {
+  align-content: flex-start;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(./images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(./images/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #edeef0;
+}
+
+.outerdiv {
+  width: auto;
+  height: 150px;
+  background-color: transparent;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.innerdiv {
+  width: auto;
+  height: auto;
+}
+
+.options {
+  border-radius: 15px;
+}
+
+.catdropdown {
+  padding-bottom: 3%;
+  word-wrap: break-word;
+}

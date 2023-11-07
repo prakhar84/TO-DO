@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="container-fluid whole-body">
+        <div class="main-body">
+            <div class="card upper-card">
+                <div class="card-body ">
+                    <h1 id="heading" style="color: orange;">To-Do List</h1>
+                    <div class="catdropdown">
+                        <select class="form-select " id="category" aria-label="Floating label select example">
+                            <option value="0" selected>Select your Category</option>
+                            <option value="General">General</option>
+                            <option value="Personal">Personal</option>
+                            <option value="Books to read">Books to read</option>
+                            <option value="To Buy">To Buy</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="inputbox" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Enter your task...">
+                        <button type="button" class="btn btn-outline-secondary"
+                            style="color: red; background-color: cyan; width: 15%;" onclick="addTask()">Add
+                            Task</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="outerdiv">
+                <div class="card innerdiv">
+                    <ul class="list-group list-group-flush " id="listcontainer">
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
